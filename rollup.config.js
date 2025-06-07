@@ -32,6 +32,16 @@ export default [
 		input: './src/dropcss.js',
 		output: {
 			name: 'dropcss',
+			file: './dist/dropcss.esm.js',
+			format: 'esm',
+			exports: "auto",
+			banner,
+		},
+	},
+	{
+		input: './src/dropcss.js',
+		output: {
+			name: 'dropcss',
 			file: './dist/dropcss.iife.js',
 			format: 'iife',
 			esModule: false,
